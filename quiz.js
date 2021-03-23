@@ -47,7 +47,6 @@ function quiz(){
     console.log(questions[i].question)
     var answer = readlineSync.keyInSelect(questions[i].options, questions[i].question)
     if (questions[i].options[answer].toLowerCase() == questions[i].answer.toLowerCase()){
-        console.log(questions[i].options[answer].toLowerCase())
         score += 1
     }
   }
@@ -66,6 +65,3 @@ scores.sort(function(a,b){return a-b})
 console.log("High Score: " + scores[scores.length - 1])
 
 console.log('=====XXX===== Thank you =====XXX=====')
-
-// var chalk = require('chalk')
-// console.log(chalk.bold.blue('Hello World!'))
