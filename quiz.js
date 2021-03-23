@@ -52,8 +52,6 @@ function quiz(){
   }
   console.log('\n'+ playerName+ ' your score is: ' +  score )
   scores.push(score)
-  // console.log('Do you want to continue? press Y')
-
 }
 
 var play = readlineSync.question('Press Y to start the game: ');
